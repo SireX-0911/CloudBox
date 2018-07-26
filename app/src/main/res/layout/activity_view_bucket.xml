@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b8eda"
+    android:orientation="vertical"
+    tools:context="is.com.cryptobayt.AddFiles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/forty_five_dp"
+            android:layout_height="@dimen/forty_five_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/cloud_trans_filled"
+            android:tint="#0b8eda" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="CloudBox"
+            android:textColor="#0b8eda"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/buckedName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_weight="1"
+            android:text="Files for download"
+            android:textColor="#def1fd"
+            android:textSize="@dimen/sixteen_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_color_pr_strike_solid_grey"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/twelve_dp" />
+
+</LinearLayout>

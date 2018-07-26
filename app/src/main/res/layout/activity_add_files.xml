@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b8eda"
+    android:orientation="vertical"
+    tools:context="is.com.cryptobayt.AddFiles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/forty_five_dp"
+            android:layout_height="@dimen/forty_five_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:src="@drawable/cloud_trans_filled"
+            android:tint="#0b8eda" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="CloudBox"
+            android:textColor="#0b8eda"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/beginShow"
+            android:layout_width="@dimen/thirty_five_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:src="@drawable/check"
+            android:tint="#0b8eda" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/sixteen_dp"
+        android:text="Box name"
+        android:textColor="#def1fd"
+        android:textSize="@dimen/sixteen_dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/roomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@drawable/edit_text_color_pr_strike"
+        android:hint="Enter box name"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/seven_dp"
+        android:textColor="#464646"
+        android:textColorHint="#def1fd"
+        android:textSize="@dimen/sixteen_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_weight="1"
+            android:text="Emails have access"
+            android:textColor="#def1fd"
+            android:textSize="@dimen/sixteen_dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:background="@drawable/edit_text_color_pr_strike_solid_grey"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/seven_dp"
+        android:textColor="#0b8eda" />
+
+    <LinearLayout
+        android:background="@drawable/btn_strike"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ivAddEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:text="+ Add"
+            android:textColor="#def1fd"
+            android:textSize="@dimen/sixteen_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_weight="1"
+            android:text="Files in the box"
+            android:textColor="#def1fd"
+            android:textSize="@dimen/sixteen_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_color_pr_strike_solid_grey"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/seven_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/twelve_dp" />
+
+    <LinearLayout
+        android:background="@drawable/btn_strike"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ivAddFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:text="+ Add"
+            android:textColor="#def1fd"
+            android:textSize="@dimen/sixteen_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

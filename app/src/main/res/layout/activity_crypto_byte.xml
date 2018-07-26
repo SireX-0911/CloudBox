@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="top|center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/cloud_trans"
+        android:tint="#def1fd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llEmail"
+                android:layout_width="@dimen/two_hundred_fifty_dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edit_text_color_pr_strike"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/twenty_five_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/nine_dp"
+                    android:layout_marginLeft="@dimen/eighteen_dp"
+                    android:layout_marginTop="@dimen/nine_dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/google_icon"
+                    android:tint="#def1fd" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twenty_five_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@drawable/emp"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:text=""
+                    android:textColor="#def1fd"
+                    android:textColorHint="#def1fd"
+                    android:textSize="@dimen/fourteen_dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/two_hundred_fifty_dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/fourteen_dp"
+                android:background="@drawable/edit_text_color_pr_strike"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/twenty_five_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/nine_dp"
+                    android:layout_marginLeft="@dimen/eighteen_dp"
+                    android:layout_marginTop="@dimen/nine_dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/keyy"
+                    android:tint="#def1fd" />
+
+                <EditText
+                    android:id="@+id/etChoiseKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twenty_five_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:background="@drawable/emp"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="Key file"
+                    android:text=""
+                    android:textColor="#def1fd"
+                    android:textColorHint="#def1fd"
+                    android:textSize="@dimen/fourteen_dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/two_hundred_fifty_dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/twelve_dp"
+                android:background="@drawable/edit_text_color_solid"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSearchRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/seven_dp"
+                    android:layout_marginTop="@dimen/seven_dp"
+                    android:gravity="center"
+                    android:text="Open"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/twenty_dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/createRoom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:gravity="center_horizontal"
+        android:text="New box"
+        android:textColor="#0d8cd5"
+        android:textSize="@dimen/sixteen_dp" />
+
+</FrameLayout>

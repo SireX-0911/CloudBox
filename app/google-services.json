@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "365798997154",
+    "firebase_url": "https://safebox-2c3dc.firebaseio.com",
+    "project_id": "safebox-2c3dc",
+    "storage_bucket": "safebox-2c3dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365798997154:android:f140052b4ad8faf6",
+        "android_client_info": {
+          "package_name": "is.com.cryptobayt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365798997154-pb8egdi68m6t8qjj88s4e9cheilmqfdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "is.com.cryptobayt",
+            "certificate_hash": "159bf6581267bb27609c057e664c02b450fd6d14"
+          }
+        },
+        {
+          "client_id": "365798997154-6plcks9u9ik4t5lqnrk9elf37ff2eiml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "is.com.cryptobayt",
+            "certificate_hash": "d8befaa1767e58377d7f1df5c351aa9e9edbba4f"
+          }
+        },
+        {
+          "client_id": "365798997154-t6v6vrfc1ks8ljie44qlb5vchenmtv0u.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "365798997154-t6v6vrfc1ks8ljie44qlb5vchenmtv0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABzXocr0ZRzaiqG0-ZRM6hjqe4fUIF71M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365798997154-t6v6vrfc1ks8ljie44qlb5vchenmtv0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
